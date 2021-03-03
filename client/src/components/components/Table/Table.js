@@ -58,7 +58,7 @@ function Table({ data, onSorting, loading, state, onResetSearch }) {
     }
     return <div className={btnClassName}>Results</div>;
   };
-  console.log(data);
+
   return (
     <>
       {loading && <Loader />}

@@ -66,6 +66,26 @@ function DashboardPage() {
     setMutableData(state);
   }, [state]);
 
+  const fitData = useMemo(() => {
+    let fitMutableData = mutableData;
+
+    if (sorting.field === "statusId") {
+      fitMutableData = fitMutableData.sort((a, b) =>
+        sorting.order === "ascending"
+          ? a.status[sorting.field] - b.status[sorting.field]
+          : b.status[sorting.field] - a.status[sorting.field]
+      );
+    } else {
+      const reversed = sorting.order === "ascending" ? 1 : -1;
+      fitMutableData = fitMutableData.sort(
+        (a, b) =>
+          reversed * a[sorting.field].toString().localeCompare(b[sorting.field])
+      );
+    }
+
+    return fitMutableData;
+  }, [sorting, mutableData]);
+
   useEffect(() => {
     const promises = [api.get("/sites"), api.get("/tests")];
     const promisesResolved = promises.map((promise) =>
@@ -97,26 +117,6 @@ function DashboardPage() {
         console.log("FAIL", err);
       });
   }, []);
-
-  const fitData = useMemo(() => {
-    let fitMutableData = mutableData;
-
-    if (sorting.field === "statusId") {
-      fitMutableData = fitMutableData.sort((a, b) =>
-        sorting.order === "ascending"
-          ? a.status[sorting.field] - b.status[sorting.field]
-          : b.status[sorting.field] - a.status[sorting.field]
-      );
-    } else {
-      const reversed = sorting.order === "ascending" ? 1 : -1;
-      fitMutableData = fitMutableData.sort(
-        (a, b) =>
-          reversed * a[sorting.field].toString().localeCompare(b[sorting.field])
-      );
-    }
-
-    return fitMutableData;
-  }, [sorting, mutableData]);
 
   useEffect(() => {
     setMutableData(state);
