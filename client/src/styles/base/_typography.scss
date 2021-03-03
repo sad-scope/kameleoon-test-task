@@ -1,0 +1,90 @@
+.heading-main {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-typography-first;
+}
+
+.heading-secondary {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.span-main {
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-typography-third;
+}
+
+.span-secondary {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-typography-first;
+}
+
+.span-sub-information {
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $color-typography-fifth;
+}
+
+.span-history-back {
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.span-bolt {
+  font-size: 13px;
+  font-weight: 500;
+  color: $color-typography-second;
+}
+
+.span-table-header {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-typography-fourth;
+}
+
+.span-table-online {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-typography-online;
+}
+
+.span-table-stopped {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-typography-stopped;
+}
+
+.span-table-draft {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.span-table-paused {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-typography-paused;
+}

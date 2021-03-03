@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  background: $color-background;
+}
+
+.whrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 954px;
+  padding: 2rem;
+}

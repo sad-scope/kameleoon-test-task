@@ -1,0 +1,14 @@
+.back-history {
+  display: flex;
+  position: absolute;
+  bottom: 30rem;
+  cursor: pointer;
+  &__arrow {
+    align-self: center;
+    margin-right: 19px;
+  }
+  &__span {
+    align-self: center;
+    margin-top: 2px;
+  }
+}

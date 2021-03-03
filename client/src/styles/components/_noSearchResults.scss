@@ -1,0 +1,15 @@
+.no-search-results {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 149px;
+  row-gap: 37px;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__button {
+    justify-self: center;
+  }
+}

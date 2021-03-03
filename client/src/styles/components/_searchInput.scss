@@ -1,0 +1,37 @@
+.search-component {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  background: $color-white;
+  border-radius: 15px;
+  display: flex;
+
+  &__magnifer {
+    align-self: center;
+    margin-left: 13px;
+    margin-right: 11px;
+  }
+
+  &__input {
+    flex: 2 1 0;
+    align-self: center;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: $color-typography-first;
+    height: 100%;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 16.41px;
+      color: $color-typography-fifth;
+    }
+  }
+
+  &__tests-quantity {
+    align-self: center;
+    margin-right: 16.59px;
+  }
+}
